@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="client.js"></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cliente</title>
+    
+  </head>
+  <body onload="getClient()" >
+  <header class="cabecera">
+    <div class="caja">
+      <img src="img/coche.png" class="coche" />
+      <h1 class="titulo-principal">Renta Car</h1>
+    </div>
+  </header>
+  
+    <div>
+      <section class="retorno">
+      <!--<a href="index.html"></a>-->
+      <button onclick="location.href='index.html'" class="enviar">regresar</button>
+      </section>
+      <main>
+        
+
+      <form>
+      
+        <h3>Agregar Cliente</h3>
+        <input type="number" id="id" required placeholder="Id" class="input-padron">
+        <input type="text" id="name" required placeholder="Nombre"class="input-padron">
+        <input type="email" id="email" required placeholder="Email"class="input-padron">
+        <input type="number" id="age" required placeholder="Edad"class="input-padron">
+        <button onclick="saveClient()" class="enviar">Guardar</button>
+        <button onclick="updateClient()" class="enviar">Actualizar</button>
+
+      
+      </form>
+
+      <section>
+        <h3>Consultar Lista de Clientes</h3>
+      <button onclick="getClient()" class="enviar-consulta">Clic para Consultar</button>
+    <br/>
+
+  </section>
+    </div>
+
+    <div>
+        <table>
+          <!-- <thead>
+            <tr>
+               <th>Id</th>
+                <th>Marca</th>
+                <th>Año</th>
+                <th>Referencia</th>
+                <th>Eliminar</th>
+                <tr>
+                    <td>Id</td>
+                    <td>Marca</td>
+                    <td>año</td>
+                    <td>referencia</td>
+
+                </tr>
+            </tr>
+          </thead>-->
+          <tbody>
+            <div id="result"></div>
+          </tbody>
+        </table>
+    </div>
+
+    <!--<div id="result">-->
+
+
+    </div>
+  
+  </main>
+    <footer>
+      <p class="copyright">&copy Copyright Jhonny Sarmiento</p>
+    </footer>
+  </body>
+</html>

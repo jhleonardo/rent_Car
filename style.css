@@ -1,0 +1,256 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  background-color: #04adbf;
+  padding: 20px 0;
+}
+
+.caja {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+.titulo-principal {
+  position: absolute;
+  text-align: right;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fefefe;
+  /*margin: 0 0 0 15px;*/
+  right: 0;
+  top: 110px;
+}
+
+.productos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px;
+}
+.productos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1%;
+  padding: 30px 3px;
+  box-sizing: border-box;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #f2e0c93e;
+}
+.productos li:hover {
+  border-color: #a0a603;
+  background-color: #04bfbf24;
+}
+.productos li:active {
+  border-color: #025959;
+}
+.productos h2 {
+  font-size: 30px;
+  font-weight: bold;
+  transition: 500ms;
+}
+.productos li:hover h2 {
+  font-size: 40px;
+}
+.productos a {
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  background-color: #04adbf;
+  padding: 40px;
+}
+.copyright {
+  color: #fefefe;
+  font-size: 16px;
+  margin: 20px;
+}
+/*------ formulario ------*/
+
+form {
+  margin: 0 auto;
+  width: 960px;
+}
+form label {
+  display: block;
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+form h3 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 25px 0;
+  text-align: center;
+}
+.input-padron {
+  /*display: block;*/
+  margin: 0 5px 20px;
+  padding: 10px 15px;
+  width: 20%;
+  font-weight: lighter;
+}
+/*.input-padron:only-child {
+  width: 15px;
+}*/
+.enviar {
+  width: 45%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  transition: 2s all;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px 20px 5px 25px;
+}
+.enviar:hover {
+  background: #a0a603;
+  transform: scale(1.2) /*rotate(2deg)*/;
+}
+/*seccion de retorno*/
+
+.retorno button {
+  width: 20%;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  transition: 2s all;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px 20px 5px 25px;
+}
+.enviar:hover {
+  background: #a0a603;
+  transform: scale(1.1) /*rotate(2deg)*/;
+}
+
+section {
+  margin: 0 auto;
+  width: 960px;
+}
+section h3 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.enviar-consulta {
+  width: 45%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  transition: 2s all;
+  cursor: pointer;
+  /*text-align: center;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.enviar-consulta:hover {
+  background: #a0a603;
+  transform: scale(1.2) /*rotate(2deg)*/;
+}
+
+/* tabla*/
+#result {
+  margin: 20px 10px;
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-top: 2em;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+table th {
+  background-color: #555;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table th,
+  table td {
+    display: block;
+    padding: 10px;
+    text-align: right;
+  }
+
+  table th {
+    text-align: right;
+  }
+
+  table tbody tr {
+    border-bottom: 2px solid #ccc;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  table tbody tr:last-of-type {
+    border-bottom: 0;
+  }
+
+  table tbody td::before {
+    content: attr(data-label);
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 5px;
+    text-transform: uppercase;
+  }
+}
+
+/*mensaje*/
+
+.input-padron-mensaje {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 30%;
+}
+.input-padron-mensaje:nth-child(3n) {
+  /*display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;*/
+  width: 100%;
+}
