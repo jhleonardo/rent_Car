@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="message.js"></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Renta Car</title>
+    
+  </head>
+  <body>
+  <header class="cabecera">
+    <div class="caja">
+      <img src="img/coche.png" class="coche" />
+      <h1 class="titulo-principal">Renta Car</h1>
+    </div>
+  </header>
+  
+    <div>
+      <section class="retorno">
+      <button onclick="location.href='index.html'" class="enviar">regresar</button>
+      </section>
+      <main>
+        
+
+      <form>
+      
+        <h3>Agregar Mensaje</h3>
+        <input type="number" id="id" required placeholder="id" class="input-padron-mensaje">
+        <textarea id="messagetext" required placeholder="Escriba su mensaje aqui.." class="input-padron-mensaje" cols="70" rows="10" autofocus></textarea>
+        
+        <button onclick="saveMessage()" class="enviar">Guardar</button>
+        <button onclick="updateMessage()" class="enviar">Actualizar</button>
+
+      
+      </form>
+
+        <section>
+            <h3>Consultar Lista de Mensajes</h3>
+            <button onclick= "getMessage()" class="enviar-consulta">Clic para Consultar</button>
+            <br/>
+
+        </section>
+    </div>
+
+        <div id="result">
+
+
+    </div>
+  
+  </main>
+    <footer>
+      <p class="copyright">&copy Copyright Jhonny Sarmiento</p>
+    </footer>
+  </body>
+</html>
